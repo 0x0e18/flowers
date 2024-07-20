@@ -6,6 +6,8 @@ The animation data is derived from text found in the data folder. You can change
 
 This tutorial should be very beginner friendly, but if you encounter issues you can either dm me on Twitter at [@wgm_v](https://x.com/wgm_v) or use ChatGPT to help walk you through it.
 
+The website is live [here](https://0x0e18.github.io/flowers/) if you'd like to see how it actually looks and works.
+
 ## Features
 
 - Display messages for your loved ones.
