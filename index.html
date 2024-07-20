@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message Board</title> <!-- Generalized the title -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="path/to/your/icon.png"> <!-- Placeholder for favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="path/to/your/icon.png"> <!-- Placeholder for apple touch icon -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <style>
+        .hidden {
+            display: none;
+        }
+        .visible {
+            display: block;
+        }
+        #message {
+            position: absolute;
+            bottom: 120px;
+            padding: 0 10px;
+            width: calc(100% - 20px); /* Adjust width to prevent overflow */
+            font-size: 1.5em;
+            color: white;
+            text-align: center;
+            z-index: 1;
+            box-sizing: border-box; /* Include padding and border in element's total width and height */
+        }
+        .nav-buttons {
+            position: absolute;
+            bottom: 50px; /* Move the buttons up */
+            width: 100%;
+            text-align: center;
+        }
+        .nav-button {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: none;
+            border-radius: 50%;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 1.5em;
+            color: #0C2C40;
+            margin: 0 10px;
+        }
+        .nav-button:hover {
+            background-color: rgba(255, 255, 255, 1);
+        }
+        @media (max-width: 600px) {
+            #message {
+                font-size: 1.2em;
+            }
+            .nav-button {
+                font-size: 1.2em;
+                padding: 8px;
+            }
+            .nav-buttons {
+                bottom: 30px; /* Adjust the margin for mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Container for flower animation -->
+    <div id="flower-container"></div>
+    
+    <!-- Container for displaying messages -->
+    <div id="message">
+        <!-- Span elements to display different messages -->
+        <span id="part1" class="hidden">First message goes here.</span>
+        <span id="part2" class="hidden">Second message goes here.</span>
+    </div>
+    
+    <!-- Navigation buttons to switch between messages -->
+    <div class="nav-buttons">
+        <button id="prev-button" class="nav-button">←</button>
+        <button id="next-button" class="nav-button">→</button>
+    </div>
+    
+    <!-- Hidden message container for optional easter egg -->
+    <div id="hidden-message" style="display: none;">
+        <!-- You can leave a hidden message here in the code if you want to include a little easter egg for the person to find, or to show them later. -->
+    </div>
+    
+    <!-- Linking the external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>

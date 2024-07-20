@@ -1,0 +1,87 @@
+/* General styles for the body element */
+body {
+    margin: 0; /* Remove default margin */
+    overflow: hidden; /* Hide overflow to prevent scrolling */
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background-color: #0C2C40; /* Background color */
+    font-family: Arial, sans-serif; /* Font family */
+    color: white; /* Text color */
+    text-align: center; /* Center text */
+}
+
+/* Container for flower animation */
+#flower-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    background-color: #0C2C40; /* Background color */
+    z-index: -1; /* Place behind other elements */
+}
+
+/* Styles for the canvas element */
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    z-index: -2; /* Ensure the canvas is behind everything else */
+}
+
+/* Container for displaying messages */
+#message {
+    position: absolute;
+    bottom: 100px;
+    padding: 0 10px;
+    width: calc(100% - 20px); /* Adjust width to prevent overflow */
+    font-size: 1.5em; /* Font size */
+    color: white; /* Text color */
+    text-align: center; /* Center text */
+    z-index: 1; /* Ensure it's above other elements */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Container for navigation buttons */
+.nav-buttons {
+    position: absolute;
+    bottom: 50px; /* Move the buttons up */
+    width: 100%; /* Full width */
+    text-align: center; /* Center buttons */
+}
+
+/* Styles for each navigation button */
+.nav-button {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    border: none; /* No border */
+    border-radius: 50%; /* Circular shape */
+    padding: 10px; /* Padding inside the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1.5em; /* Font size */
+    color: #0C2C40; /* Text color */
+    margin: 0 10px; /* Margin between buttons */
+}
+
+/* Hover effect for navigation buttons */
+.nav-button:hover {
+    background-color: rgba(255, 255, 255, 1); /* Fully opaque background on hover */
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 600px) {
+    #message {
+        font-size: 1.2em; /* Smaller font size */
+    }
+    .nav-button {
+        font-size: 1.2em; /* Smaller font size */
+        padding: 8px; /* Smaller padding */
+    }
+    .nav-buttons {
+        bottom: 30px; /* Adjust the margin for mobile */
+    }
+}
