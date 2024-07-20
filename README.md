@@ -4,7 +4,7 @@ Create a simple, heartfelt website for a loved one with an animation including f
 
 The animation data is derived from text found in the data folder. You can change this data to any song or text of your choice.
 
-This tutorial should be very beginner friendly, but if you encounter issues you can either dm me on Twitter at @wgm_v or use ChatGPT to help walk you through it.
+This tutorial should be very beginner friendly, but if you encounter issues you can either dm me on Twitter at [@wgm_v](https://x.com/wgm_v) or use ChatGPT to help walk you through it.
 
 ## Features
 
