@@ -15,3 +15,9 @@ Explanation of files:
   This is what actually creates the animation, and it controls the actual program of the website. This file includes code for the navigation arrows, for the animation, for handling the logic of the messages appearing/disappearing based on the navigation buttons being used, etc. Additionally, this takes the information from the Data folder and creates the animation based on said data.
 - Data Folder
 This contains the information upon which the animation is created. I used song lyrics, but as long as you properly edit the script.js files to account for the filename changes if you do change them, you can do whatever with these.
+
+
+This project was heavily inspired by, and assisted by this video from 'Creative Coderie'. If you like this repo or found it helpful, I strongly suggest starring their repository as well and subscribing to their channel. I made a lot of changes to fit this to my own uses, but the idea to generate the animations from the songs, and the code to do so came from their previous work.
+
+video: https://www.youtube.com/watch?v=r_3D8zDci8c
+repo: https://github.com/hbyhadeel/GenArtTutorials/tree/main/Loading_Text_Files_Tutorial
